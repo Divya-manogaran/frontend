@@ -19,7 +19,7 @@ const FavoritesPage = () => {
         for (const city of storedFavorites) {
           try {
             const response = await axios.get(
-              `http://localhost:5000/api/weather/forecast?city=${city}`
+              `https://backend-2-0acq.onrender.com/api/weather/forecast?city=${city}`
             );
             data[city] = response.data.main.temp; // Store temperature by city
           } catch (error) {

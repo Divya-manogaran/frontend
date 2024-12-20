@@ -17,7 +17,7 @@ const WeatherSearchPage = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/weather/forecast?city=${city}`
+        `https://backend-2-0acq.onrender.com/api/weather/forecast?city=${city}`
       );
       setWeather(response.data);
     } catch (error) {

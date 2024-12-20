@@ -12,7 +12,7 @@ const Register = () => {
     e.preventDefault();
     try {
       console.log('Sending:', { email, password });
-      const response = await axios.post('http://localhost:5000/api/auth/register', { email, password });
+      const response = await axios.post('https://backend-2-0acq.onrender.com/api/auth/register', { email, password });
       console.log('Response:', response.data);
       if (response.data.success) {
         alert('Registration Successful!');
